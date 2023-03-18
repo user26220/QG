@@ -1,0 +1,2 @@
+C:\Users\MO\Desktop\dulLinkedList\x64\Debug\dulLinkedList.exe
+C:\Users\MO\Desktop\QG工作室考核\第一周\LinkList\dulLinkedList\x64\Debug\dulLinkedList.exe

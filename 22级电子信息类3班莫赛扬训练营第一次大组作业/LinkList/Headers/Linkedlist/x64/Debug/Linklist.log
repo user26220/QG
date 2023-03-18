@@ -1,0 +1,9 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(Linklist.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  linkedlist.c
+C:\Users\MO\Desktop\Linkedlist\linkedlist.c(46,15): warning C4098: “TraverseList”:“void”函数返回值
+C:\Users\MO\Desktop\Linkedlist\linkedlist.c(208,17): warning C4047: “return”:“LNode *”与“int”的间接级别不同
+C:\Users\MO\Desktop\Linkedlist\linkedlist.c(238,16): warning C4047: “return”:“LNode *”与“int”的间接级别不同
+  test.c
+  正在生成代码...
+C:\Users\MO\Desktop\Linkedlist\linkedlist.c(10): warning C4716: “InitList”: 必须返回一个值
+  Linklist.vcxproj -> C:\Users\MO\Desktop\Linkedlist\x64\Debug\Linkedlist.exe
