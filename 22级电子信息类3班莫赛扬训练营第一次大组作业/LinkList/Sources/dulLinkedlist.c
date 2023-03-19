@@ -49,8 +49,18 @@ Status InsertAfterList_DuL(DuLNode* p, DuLNode* q)
 
 Status DeleteList_DuL(DuLNode* p, ElemType* e)
 {
-	p->next->prior = p->prior;	//p之后的结点连到p之前的结点上
-	p->prior->next = p->next;	//p之前的结点连到p之后的结点上
+	if (p->next!= NULL&& p->prior != NULL)
+	{
+		p->next->prior = p->prior;	//p之后的结点连到p之前的结点上
+		p->prior->next = p->next;	//p之前的结点连到p之后的结点上
+	}
+	
+	if (p->next == NULL && p->prior != NULL)
+	{
+		p->prior->next = p->next;
+	}
+
+
 	*e = p->data;				//返回被删除的值
 	free(p);
 	return SUCCESS;
@@ -60,7 +70,9 @@ void TraverseList_DuL(DuLinkedList L, void (*visit)(ElemType e))
 {
 	DuLNode* pnode = L;
 	int count = 0;
-	while (pnode)
+
+	
+	while (pnode&&!IsLoopList(L))
 	{
 		count++;
 		printf("第%d项数据:", count);
@@ -70,6 +82,7 @@ void TraverseList_DuL(DuLinkedList L, void (*visit)(ElemType e))
 	if (count == 0)
 		printf("没得遍历了\n");
 }
+
 Status IsLoopList(DuLinkedList* L)
 {
 	if (*L == NULL)
@@ -77,6 +90,7 @@ Status IsLoopList(DuLinkedList* L)
 	else
 		return ERROR;
 }
+
 void InsertBeforeList(DuLinkedList* L, int n)
 {
 	int count = 0;
@@ -137,14 +151,18 @@ void DeleteList(DuLinkedList* L, int n)
 	ElemType e = 0;
 	int count = 0;
 	if (IsLoopList(L))
-		printf("ERROR\n");						//如果为空，直接放在*L处
+		printf("ERROR\n");						//如果为空，直接放在*L处	
 	else
 	{
 		for (p = *L; p; p = p->next)
 		{
 			if (++count == n)
-			{
-				DeleteList_DuL(p, &e);
+			{	
+				if (p->next == NULL && p->prior == NULL)
+				{
+					*L = NULL;
+				}
+				DeleteList_DuL(p, &e);			
 				printf("你删除了第%d项数据：%d",count,e);
 				break;
 			}

@@ -1,2 +1,3 @@
 C:\Users\MO\Desktop\dulLinkedList\x64\Debug\dulLinkedList.exe
 C:\Users\MO\Desktop\QG工作室考核\第一周\LinkList\dulLinkedList\x64\Debug\dulLinkedList.exe
+C:\Users\MO\Desktop\22级电子信息类3班莫赛扬训练营第一次大组作业\LinkList\Headers\duLinkList\x64\Debug\dulLinkedList.exe

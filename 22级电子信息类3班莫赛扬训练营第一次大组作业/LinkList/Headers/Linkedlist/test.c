@@ -19,7 +19,7 @@ int main()
 	InitList(&list);
 
 	int type = 0, n = 0, num = 0;
-	//创建链表
+	//生成链表
 	printf("首先请创建链表：\n");
 	printf("扣1手动输入\n扣2自动生成(10个节点以内)\n");
 	printf("请输入你的选择：");
@@ -229,7 +229,7 @@ Status DeleteLink(LinkedList* L, int n)
 		return ERROR;
 	}
 
-	LNode* p=(*L)->next;
+	LNode* p=*L;
 	ElemType temp=0;
 	int count = 0,book=0;
 

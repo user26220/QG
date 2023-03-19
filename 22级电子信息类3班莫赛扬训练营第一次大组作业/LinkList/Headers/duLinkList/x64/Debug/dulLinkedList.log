@@ -1,4 +1,4 @@
 ﻿  dulLinkedlist.c
-  test.c
-  正在生成代码...
-  dulLinkedList.vcxproj -> C:\Users\MO\Desktop\QG工作室考核\第一周\LinkList\dulLinkedList\x64\Debug\dulLinkedList.exe
+C:\Users\MO\Desktop\22级电子信息类3班莫赛扬训练营第一次大组作业\LinkList\Headers\duLinkList\dulLinkedlist.c(75,29): warning C4047: “函数”:“DuLinkedList *”与“DuLinkedList”的间接级别不同
+C:\Users\MO\Desktop\22级电子信息类3班莫赛扬训练营第一次大组作业\LinkList\Headers\duLinkList\dulLinkedlist.c(75,28): warning C4024: “IsLoopList”: 形参和实参 1 的类型不同
+  dulLinkedList.vcxproj -> C:\Users\MO\Desktop\22级电子信息类3班莫赛扬训练营第一次大组作业\LinkList\Headers\duLinkList\x64\Debug\dulLinkedList.exe
